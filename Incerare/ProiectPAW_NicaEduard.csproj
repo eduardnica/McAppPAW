@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F39F49F8-A3EC-4AF5-B38F-CAEB00C30298}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Incerare</RootNamespace>
+    <AssemblyName>Incerare</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Acasa.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Acasa.Designer.cs">
+      <DependentUpon>Acasa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Angajat.cs" />
+    <Compile Include="Client.cs" />
+    <Compile Include="Comanda.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAngajati.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAngajati.Designer.cs">
+      <DependentUpon>FormAngajati.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormClientiVechi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormClientiVechi.Designer.cs">
+      <DependentUpon>FormClientiVechi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCumparaturi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCumparaturi.Designer.cs">
+      <DependentUpon>FormCumparaturi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGrafic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGrafic.Designer.cs">
+      <DependentUpon>FormGrafic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Persoana.cs" />
+    <Compile Include="Produs.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl1.Designer.cs">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ZonaClienti.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ZonaClienti.Designer.cs">
+      <DependentUpon>ZonaClienti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_DB_ProiectDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_DB_ProiectDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_DB_ProiectDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_DB_ProiectDataSet1.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Acasa.resx">
+      <DependentUpon>Acasa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAngajati.resx">
+      <DependentUpon>FormAngajati.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormClientiVechi.resx">
+      <DependentUpon>FormClientiVechi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCumparaturi.resx">
+      <DependentUpon>FormCumparaturi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGrafic.resx">
+      <DependentUpon>FormGrafic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="UserControl1.resx">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ZonaClienti.resx">
+      <DependentUpon>ZonaClienti.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="_DB_ProiectDataSet.xsc">
+      <DependentUpon>_DB_ProiectDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="_DB_ProiectDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_DB_ProiectDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_DB_ProiectDataSet.xss">
+      <DependentUpon>_DB_ProiectDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="_DB_ProiectDataSet1.xsc">
+      <DependentUpon>_DB_ProiectDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="_DB_ProiectDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_DB_ProiectDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_DB_ProiectDataSet1.xss">
+      <DependentUpon>_DB_ProiectDataSet1.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home_26px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Client.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Angajat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inchide.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customer_26px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cumparaturi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backCumparaturi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backCumparaturi1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Produse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tasty.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BigMac.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Royal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Toast.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
